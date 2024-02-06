@@ -1050,9 +1050,6 @@ footer .widget p{
 	width: 78px;
 	display: block;
 }
-.about-us-details ul li:hover .about-us-icon i {
-
-}
 .about-us-details ul li{
 	margin-bottom: 46px;
 }
@@ -1473,8 +1470,8 @@ footer .widget p{
 	position: relative;
 }
 .client-authore{
-	width: 82px;
-	height: 82px;
+	width: 150px;
+	height: 150px;
 	margin: 0 auto 24px;
 }
 .client-authore-details p {
@@ -2143,6 +2140,13 @@ ul.post-date li a {
     transform: rotate(45deg);
     width: 180px;
     z-index: 9;
+}
+
+.sevices-btn {
+	text-align: center;
+}
+.sevices-btn:hover {
+	color: rgb(255, 255, 255);
 }
 
 
@@ -3443,3 +3447,10 @@ tbody ul li a{
 	right: 60px;
 	top: 0;
 }
+
+
+
+
+
+
+
