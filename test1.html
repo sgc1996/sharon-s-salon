@@ -1,0 +1,413 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sharon's | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+          /* topbar */
+.topbar {
+    padding: 37px 0;
+}
+.topbar p{
+	line-height: 32px;
+	margin-bottom: 0;
+}
+.call-us{
+	text-align: right;
+}
+.call-us p {
+    font-size: 14px;
+}
+.contact-info-inner{
+	padding-right: 0;
+}
+.contact-info-padding{
+	padding-right: 0;
+	padding-left: 10px
+}
+.call-us h5 {
+    font-weight: 600;
+}
+.info-icon {
+	border: 1px solid #ddd;
+	float: left;
+	font-size: 23px;
+	line-height: 48px;
+	margin-right: 17px;
+	margin-top: 10px;
+	text-align: center;
+	width: 48px;
+	height: 48px;
+}
+.logo,
+.social-icon-circle{
+	padding: 10px 0;
+	margin-bottom: 0;
+}
+.social-icon-circle a {
+	border: 1px solid #a7a7a7;
+	border-radius: 50%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	width: 48px;
+	display: inline-block;
+	margin: 0px 4px;
+}
+.appointment a{
+	color: #bf9456;
+	display: block;
+	padding: 16px 0;
+	text-align: center;
+}
+.appointment:hover{
+	background-color: #000;
+	color: #bf9456;
+}
+.sticky-navbar.sticky-header .appointment{
+	margin: 12px 0;
+}
+.main-menu {
+	position: absolute;
+	z-index: 1000;
+}
+
+/*Topbar-toggle*/
+
+.topbar-toggle {
+	max-width: 300px;
+	padding: 18px 15px;
+	position: fixed;
+	right: -200px;
+	margin-right:-100px;
+	top: 49px;
+	width: 100%;
+	z-index: 100;
+}
+.topbar-info {
+	cursor: pointer;
+	font-size: 30px;
+	padding: 10px 15px 10px 0;
+}
+.topbar-close {
+	cursor: pointer;
+	position: absolute;
+	right: 9px;
+	text-align: center;
+	top: 0;
+	width: 25px;
+}
+
+.topbar-toggle .social-icon-circle a{
+	margin: 0 auto;
+}
+.topbar-toggle .contact-info-inner,
+.topbar-toggle .logo {
+	margin-bottom: 10px;
+}
+.topbar-info-area{
+	display: none;
+}
+
+/*Heaader Slider Content*/
+.slider-content {
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+}
+.header-slider{
+	position: relative;
+}
+.slider-content h1 {
+	font-size: 80px;
+	font-weight: 700;
+	margin-bottom: 45px;
+}
+.header-slider.owl-carousel .owl-item img{
+	display: inline-block;
+	width: auto;
+}
+.slider-content h2 {
+	font-size: 40px;
+	margin-top: 45px;
+}
+
+/*Slider-Controls*/
+.header-slider.header-slider-style2.owl-theme.owl-carousel .owl-nav > div {
+	border-radius: 0;
+	font-size: 22px;
+	height: 48px;
+	line-height: 44px;
+	width: 48px;
+}
+.owl-theme .owl-nav [class*="owl-"]{
+	background: none;
+}
+.header-slider.owl-theme.owl-carousel .owl-nav > div {
+	border:2px solid;
+	border-radius: 50%;
+	font-size: 30px;
+	height: 55px;
+	left: 60px;
+	line-height: 50px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: calc(50% - 25px);
+	width: 55px;
+	background: none;
+}
+.header-slider.owl-theme.owl-carousel .owl-nav > div:hover{
+	color: #070707;
+}
+.header-slider.owl-theme.owl-carousel .owl-nav > .owl-next {
+	left: auto;
+	right: 60px;
+}
+.slider-icon a{
+	color: #fff;
+}
+
+/* Slide Video */
+.header-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+/*Slider Muving Mouse Icon*/
+.slider-icon {
+    padding-top: 145px;
+}
+
+
+
+/*Header-Style-2*/
+.topbar-style2 {
+	padding: 0 0;
+}
+.topbar-content {
+	margin-top: 10px;
+}
+.social-icons i {
+    padding-right: 22px;
+}
+.social-icons ul li i {
+    padding-right: 10px;
+}
+.social-icons ul li span {
+    color: #e9e9e9;
+}
+.social-icons ul li {
+	padding-left: 32px;
+	padding-right: 0;
+}
+.social-icons ul {
+    margin-bottom: 0;
+}
+.book-online {
+	margin: 23px 0;
+}
+.sticky-navbar .main-menu-style2 .book-online {
+	margin: 17px 0;
+}
+
+.fixed-header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	z-index: 11;
+}
+.main-menu-style2 {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 35px;
+	padding: 0 40px;
+}
+.main-menu-style2 ul ul{
+	top: 98px;
+}
+.main-menu-style2 .menu > li > a {
+	padding:0 16px;
+}
+
+.main-menu-style2 .menu > li{
+	padding: 20px 5px;
+}
+.main-menu-style2 .logo{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.sticky-navbar .main-menu-style2 .logo{
+	padding-top: 23px;
+	padding-bottom: 23px;
+}
+/*Header-Style3*/
+.contact-info-inner .pull-right {
+	margin-right: 70px;
+}
+.add-to-cart {
+	height: 65px;
+	line-height: 75px;
+}
+.add-to-cart i{
+	font-size: 30px;
+}
+.cart {
+    position: relative;
+}
+.cart::after {
+    border-radius: 50%;
+    content: "5";
+    height: 20px;
+    left: 20px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    width: 20px;
+}
+
+        </style>
+        
+    </head>
+    <body>
+
+      <div class="topbar-info-area">
+        <div class="container">
+          <div class="row" style="background-color: black;">
+            <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+              <div class="logo"><a href="index.html"><img src="images/logo2.png" alt="Sharon's Salon"></a></div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 text-right">              
+              <div class="topbar-info"><i class="pe-7s-info"></i></div>
+            </div>
+          </div><!-- row -->
+        </div><!-- container -->
+      </div>  <!-- topbar-info-area -->
+
+      <!-- Start-Header -->
+      <header>
+        <div class="topbar topbar-style2" style="background-color: rgb(82, 82, 82);">
+          <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-6 topbar-content social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-6 social-icons topbar-content text-right">                   
+                <ul class="list-inline">
+                  <li><a href="tel:011295789x"><i class="fa fa-phone"></i> <span>011-295-789x</span></a></li>
+                  <li><address><i class="fa fa-home"></i> <span>No. 263/A, High Level Rd, Nugegoda</span></address></li>
+                  <li><a href="mailto:info@sharons.lk"><i class="fa fa-envelope"></i> <span> info@sharons.lk</span></a></li>
+                </ul>
+            </div>
+          </div> <!-- .row -->  
+        </div><!-- .Container -->
+      </div><!-- .topbar -->
+      <div class="topbar topbar-toggle" style="background-color: black;">
+        
+          <div class="topbar-close"><i class="fa fa-times"></i></div><!-- .topbar-close -->
+
+          <h1 class="logo text-center"><a href="index.html"><img src="images/logo2.png" alt="Sharon's Salon"></a></h1><!-- .logo -->
+
+          <div class="contact-info-inner">
+            <div class="info-icon img-circle">
+                <i class="glyphicon glyphicon-home"></i>
+            </div>
+            <a href="#">
+              <p class="color-text"  style="color: #aba9a9;">No. 263/A, High Level Rd, Nugegoda</p>
+            </a>
+          </div><!-- .contact-info-inner -->
+          <div class="contact-info-inner">
+            <div class="info-icon img-circle">
+                <i class="glyphicon glyphicon-phone"></i>
+            </div>
+            <a href="tel:011295789x">
+              <p class="color-text">ANY QUERIES CALL AT</p>
+              <p  style="color: #aba9a9;">011-295-789x</p>
+            </a>
+          </div> <!-- .contact-info-inner -->
+          <div class="contact-info-inner">
+              <div class="info-icon  img-circle">
+                  <i class="pe-7s-mail"></i>
+              </div>
+              <a href="mailto:info@sharons.lk">
+                <p class="color-text">SEND YOUR MAIL AT</p>
+                <p  style="color: #aba9a9;">info@sharons.lk</p>
+              </a>
+          </div> <!-- .contact-info-inner -->
+          <div class="contact-info-inner text-center">
+            <div class="social-icon-circle">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div><!-- .contact-info-inner -->
+      </div><!-- topbar-toggle -->
+        <nav class="header-nav sticky-header">
+          <div class="container main-menu">
+              <div class="row">
+                <div class="col-md-10">  
+                         
+                  <div class="nav-menu cssmenu menu-line-off" id="header-menu-wrap">
+                    <ul class="menu list-inline">
+                      <li><a href="index.html"><img src="images/logo2.png" alt="Sharon's Salon"></a></li>
+                      <li><a href="index.html">Home</a>
+                      </li><!-- li -->
+                      <li><a href="about-us.html" class="active">About</a>
+                      </li><!-- li -->
+                      <li><a href="service.html">Services</a>
+                      </li><!-- li -->
+                      <li><a href="#">Testimonials</a>
+                      </li><!-- li -->
+                      <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                  </div><!-- #header-menu-wrap -->
+                </div>
+                <div class="col-md-2 appointment">
+                  <a href="contact-us.html">MAKE APPOINTMENT</a>
+                </div>
+              </div>
+          </div><!-- .container -->          
+        </nav><!-- .header-nav -->
+      </header>     
+      <!-- End-Header -->
+
+      <div class="header-slider-style2">
+        <div class="overlay dark-overlay">
+          <video src="images/slider/hero.mp4" autoplay loop playsinline muted class="header-video"></video>
+            <div class="slider-content">
+              <h1 class="color-text">SHARON'S</h1>
+              <img src="images/slider-item-icon.png" alt="icon">
+              <h2 class="color-text">MAKES YOU TRENDY</h2>
+              <div class="slider-icon">                      
+                  <a href="#">
+                    <span class="mouse">
+                      <span class="pulse2"></span>
+                    </span>
+                  </a>
+              </div> 
+            </div>
+        </div>
+      <!-- </div>slider-item-index2-1 -->
+        
+    </body>
+</html>"I need to navbar background transparent and when I scroll down navbar background changes to black"
