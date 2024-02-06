@@ -187,12 +187,24 @@ h2, h3, h4, h5, a{
 .our-work-details-icon i,
 .like-share-icon i:hover,
 .about-us-details ul li:hover .about-us-icon i,
-.social-icon-circle a:hover,
 .newsletter .submit-button,	
 .header-search i,
 .cart::after,
 .header-slider.header-slider-style2.owl-theme.owl-carousel .owl-nav > div:hover{
 	background-color: #d9b450
+}
+
+.social-icon-circle .facebook:hover {
+	background-color: #4267B2;
+}
+.social-icon-circle .instagram:hover {
+	background-color: #C13584;
+}
+.social-icon-circle .youtube:hover {
+	background-color: #FF0000;
+}
+.social-icon-circle .tiktok:hover {
+	background-color: #000000;
 }
 .bg-light-alt{
 	background-color: #f7f7f7;
