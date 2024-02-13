@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sharon's Salon - Services</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<link rel="shortcut icon" type="images/png" href="images/favicon.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+
+	<link rel="stylesheet" href="css/aos.css" />
+
+	<link rel="stylesheet" href="css/ionicons.min.css" />
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+	<link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+	<link rel="stylesheet" href="css/flaticon.css" />
+	<link rel="stylesheet" href="css/icomoon.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<style>
+		/* Service Area */
+		.service-area {
+			padding: 60px 0;
+		}
+
+		.service-area .title {
+			margin-bottom: 60px;
+		}
+
+		.service-area .title h2 {
+			font-size: 36px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		.service-area .title p {
+			font-size: 18px;
+			line-height: 28px;
+			color: #666;
+		}
+
+		.service-area .service-details ul {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		.service-area .service-icon-left li {
+			margin-bottom: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: end;
+		}
+
+		.service-area .service-icon-right li {
+			margin-bottom: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: start;
+		}
+
+		.service-area .service-details h4 {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 10px;
+			color: #333;
+			margin-left: 20px;
+			/* Add margin to separate the icon and text */
+		}
+
+		.service-area .service-details p {
+			font-size: 16px;
+			line-height: 26px;
+			color: #666;
+		}
+
+		.service-area .service-icon {
+			width: 66px;
+			height: 66px;
+			background: linear-gradient(116deg, #ddbb3d, #efc31d, #d9a900, #d1aa20, #d7b023, #d7bd3d, #e3c169, #edc351, #e7bf2a, #dbcc12);
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+			margin-right: 20px;
+			/* Add margin to separate the icon and text */
+		}
+
+		.service-area .service-icon i {
+			color: #fff;
+			font-size: 24px;
+		}
+
+		.pull-right {
+			float: right;
+			margin-left: 10px;
+			/* Adjust as needed */
+		}
+
+		.service-area .service-details .about-us-icon {
+			position: relative;
+			/* Ensure positioning context for z-index */
+			margin-left: 40px;
+		}
+
+		.service-image-holder img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.flaticon-male-hair-of-the-head::before {
+			content: url(images/services/cut.png);
+			margin-left: 8px;
+		}
+
+		@media (max-width: 1219px) {
+			.service-area .service-icon-right li {
+				margin-bottom: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+			}
+
+			.service-area .service-details .about-us-icon {
+				position: relative;
+				/* Ensure positioning context for z-index */
+				margin-left: 40px;
+			}
+
+		}
+
+		@media (max-width: 767px) {
+			.service-area .service-details li {
+				flex-direction: column;
+				/* Stack icon and text vertically on smaller screens */
+				align-items: flex-start;
+			}
+
+			.text-right {
+				margin-left: 130px;
+			}
+
+			.service-area .service-icon,
+			.service-area .service-details h4 {
+				margin-right: 0;
+				/* Reset margin */
+				margin-left: 0;
+				/* Reset margin */
+			}
+
+			.service-area .col-md-4.text-right .service-details .about-us-icon {
+				position: absolute;
+				/* Position icons absolutely within the column */
+				left: -80px;
+				/* Adjust as needed to position the icons behind the text */
+				z-index: -1;
+				/* Send icons behind other content */
+			}
+
+			.service-area .service-details h4 {
+				margin-top: 10px;
+				/* Add margin between icon and text on smaller screens */
+				font-size: 0.9rem;
+			}
+
+			.service-area .service-details ul {
+				list-style: none;
+				padding-left: 15px;
+			}
+
+			.service-area .service-icon {
+				width: 50px;
+				height: 50px;
+				background: linear-gradient(116deg, #ddbb3d, #efc31d, #d9a900, #d1aa20, #d7b023, #d7bd3d, #e3c169, #edc351, #e7bf2a, #dbcc12);
+				text-align: center;
+				line-height: 60px;
+				border-radius: 50%;
+				margin-right: 20px;
+				/* Add margin to separate the icon and text */
+			}
+
+			.flaticon-male-hair-of-the-head::before {
+				content: url(images/services/cut-sm.png);
+				margin-left: 8px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="Sharon's Salon"
+					width="200" /></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">About</a>
+					</li>
+					<li class="nav-item active">
+						<a href="services.html" class="nav-link">Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="testimonials.html" class="nav-link">Testimonials</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<section class="hero-wrap js-fullheight" style="background-image: url('images/slider/services.jpg')"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+				<div class="col-md-10 ftco-animate text-center">
+					<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+						<div class="col-md-9 ftco-animate text-center">
+							<h1 class="mb-3 bread">Services</h1>
+							<p class="breadcrumbs">
+								<span class="mr-2"><a href="index.html">Home</a></span>
+								<span>Services</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section-Start -->
+	<section class="padding-large-top">
+		<!-- service-area -->
+		<div class="container">
+			<div class="service-area">
+				<!-- .service-area -->
+				<div class="row justify-content-center mb-5 pb-3">
+					<div class="col-md-12 heading-section ftco-animate text-center">
+						<h3 class="subheading">Services</h3>
+						<h2 class="mb-1">TREATMENTS</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-right">
+						<div class="service-details about-us-details service-icon-left wow fadeInLeft"
+							data-wow-duration=".5s" data-wow-delay=".25s">
+							<!-- Adjusted HTML structure -->
+							<ul>
+								<li>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Restyling</h4>
+									</div>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+								</li>
+								<li>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Hair Straightening</h4>
+									</div>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+								</li>
+								<li>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Hair Curling</h4>
+									</div>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+								</li>
+								<li>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Hair Curling</h4>
+									</div>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+								</li>
+							</ul>
+							<!-- ul -->
+						</div>
+						<!-- .about-us-details -->
+					</div>
+					<!-- .col-md-4 -->
+					<div class="col-md-4 text-center">
+						<div class="service-image-holder">
+							<img src="images/services/work-image-holder.png" alt="image" />
+						</div>
+					</div>
+					<!-- .col-md-4 -->
+					<div class="col-md-4 text-right">
+						<div class="service-details about-us-details service-icon-right wow fadeInLeft"
+							data-wow-duration=".5s" data-wow-delay=".25s">
+							<!-- Adjusted HTML structure -->
+							<ul>
+								<li>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Restyling</h4>
+									</div>
+								</li>
+								<li>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Hair Straightening</h4>
+									</div>
+								</li>
+								<li>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Hair Curling</h4>
+									</div>
+								</li>
+								<li>
+									<div class="service-icon about-us-icon">
+										<i class="flaticon flaticon-male-hair-of-the-head"></i>
+									</div>
+									<div class="pull-right">
+										<!-- Add class here -->
+										<h4>Hair Curling</h4>
+									</div>
+								</li>
+							</ul>
+							<!-- ul -->
+						</div>
+						<!-- .about-us-details -->
+					</div>
+					<!-- .col-md-4 -->
+				</div>
+				<!-- .row -->
+			</div>
+		</div>
+	</section>
+	<!--  Section-End -->
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<!-- <h2 class="ftco-heading-2">Energen</h2> -->
+						<div class="ftco-heading-2">
+							<a href="index.html">
+								<h1>
+									<img src="images/logo2.png" alt="Sharon's Salon" style="width: 255px" />
+								</h1>
+							</a>
+						</div>
+						<p style="color: #bfbfbf">
+							Far far away, behind the word mountains, far from the countries
+							Vokalia and Consonantia, there live the blind texts.
+						</p>
+						<ul class="ftco-footer-social list-unstyled float-lft mt-3">
+							<li class="ftco-animate">
+								<a href="#" class="facebook"><span class="fab fa-facebook"></span></a>
+							</li>
+							<li class="ftco-animate">
+								<a href="#" class="instagram"><span class="fab fa-instagram"></span></a>
+							</li>
+							<li class="ftco-animate">
+								<a href="#" class="youtube"><span class="fab fa-youtube"></span></a>
+							</li>
+							<li class="ftco-animate">
+								<a href="#" class="tiktok"><span class="fab fa-tiktok"></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">SHARON'S FEED</h2>
+						<div class="flickr-feed">
+							<img src="images/feed/flickr-feed1.png" alt="image" />
+							<img src="images/feed/flickr-feed2.png" alt="image" />
+							<img src="images/feed/flickr-feed3.png" alt="image" />
+							<img src="images/feed/flickr-feed4.png" alt="image" />
+							<img src="images/feed/flickr-feed5.png" alt="image" />
+							<img src="images/feed/flickr-feed6.png" alt="image" />
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">QUICK LINKS</h2>
+						<ul class="list-unstyled">
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Our Services</a></li>
+							<li><a href="testimonials.html">Testimonials</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">HAVE A QUESTIONS?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li>
+									<span class="icon icon-map-marker"></span><span class="text">No. 263/A, High Level
+										Rd, Nugegoda, Sri Lanka.</span>
+								</li>
+								<li>
+									<a href="tel:011295789x"><span class="icon icon-phone"></span><span
+											class="text">011-295-789x</span></a>
+								</li>
+								<li>
+									<a href="mailto:info@sharons.lk"><span class="icon icon-envelope"></span><span
+											class="text">info@sharons.lk</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="mb-0" style="color: #bfbfbf">
+						SHARON'S SALONS (PVT) LTD Copyright &copy;
+						<script>
+							document.write(new Date().getFullYear());
+						</script>
+						All rights reserved | Desing
+						<i class="icon-heart" aria-hidden="true"></i> by
+						<a href="https://aitech.lk/" target="_blank">AI TECH</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
