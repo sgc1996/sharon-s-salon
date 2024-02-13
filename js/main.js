@@ -1,243 +1,228 @@
-/*
+ AOS.init({
+ 	duration: 800,
+ 	easing: 'slide'
+ });
 
-1.Slider:
-	*.Header-Slider1
-	*.Client Say Slide
-	*.Style Slide
-	*.Offer Area Slider
-	*.Brand logo Slider
-	*.Brand logo Slider2
-	*.Client Say Qutue Slider
-	*.Related Protfolio Slides
+(function($) {
 
-2. CounterUp
-3. Google Map
-4. MagnificPopup
-5. MagnificPopup Iframe
-6. Sectionize-Control
-7. Unitegallery
-8. Protfolio-gallary
-9.  Price Filer
-10. Topbar Info
-11. Animation WOW JS 
-12. Scroll To Top & sticky Header
-13. Team slider
-14. Animation
-15. Map
- */
+	"use strict";
 
-jQuery(document).ready(function($){
-    "use strict"
-     // Header-Slider1
-	if ($('.header-slider').length > 0) {
-	     $('.header-slider').owlCarousel({
-	       items: 1,
-	       dots: false, 
-	       nav: true,
-	       loop: true,
-	       // autoplay:true,	              
-	       navText: ['<i class="fa fa-angle-left"></i>' , '<i class="fa fa-angle-right"></i>'],
-	     });
+	$(window).stellar({
+    responsive: true,
+    parallaxBackgrounds: true,
+    parallaxElements: true,
+    horizontalScrolling: false,
+    hideDistantElements: false,
+    scrollProperty: 'scroll',
+    horizontalOffset: 0,
+	  verticalOffset: 0
+  });
 
-	 }
-
-	// CounterUp
-	if (('.counter').length > 0) {
-	  $('.counter').counterUp({
-	        delay: 10,
-	        time: 5000
-	    });
-	}
+  // Scrollax
+  $.Scrollax();
 
 
-    // Client Say Slide
-	if ($('.client-say-item-list').length > 0) {
-	     $('.client-say-item-list').owlCarousel({
-	       items: 1,
-	       dots: false, 
-	       nav: true,
-	       loop: true,
-	       navText: ['<i class="fa fa-angle-left"></i>' , '<i class="fa fa-angle-right"></i>'],
-	       responsive:{
-	       	     	360: {
-					  nav: false,
-					  dots: true,
-					},
-		       	768: {
-					  nav: false,
-					   dots: true,
-					  
-					},
-				800: {
-					  nav: true,
-					   dots: false,
-					},
-				1000: {
-					  nav: true,
-					},
-				}
+	var fullHeight = function() {
 
-	     });
-
- 	}
-
-
-    // Style Slide
-	if ($('.style-slide').length > 0) {
-	     $('.style-slide').owlCarousel({
-	       items: 3,
-	       margin: 10,
-	       dots: false, 
-	       nav: true,
-	       loop: true,
-	       navText: ['<i class="fa fa-angle-left"></i>' , '<i class="fa fa-angle-right"></i>'],
-	     });
-
- 	}
-
- 	// Offer Area Slider
-	if ($('.offer-slide').length > 0) {
-		$('.offer-slide').owlCarousel({
-			loop: true,
-			dots: false,
-			responsive: {
-				300: {
-					items: 1,
-					dots: true,
-				},
-				480: {
-					items: 2,
-					dots: true,				
-				},
-				768: {
-					items: 3,
-					dots: true,
-				},
-				800: {
-					items: 3,
-					dots: true,
-				},
-				1000: {
-					items: 5,
-				}
-			}
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.js-fullheight').css('height', $(window).height());
 		});
-	}
 
-	// Brand logo Slider
-	if ($('.logo-brand-list').length > 0) {
-		$('.logo-brand-list').owlCarousel({
-			loop: true,
-			dots: false,
-			responsive: {
-				300: {
-					items: 1,
-					dots: true,
-				},
-				480: {
-					items: 2,
-					dots: true,
-				},
-				768: {
-					items: 3,
-					dots: true,
-					
-				},
-				800: {
-					items: 3,
-					dots: false,
-				},
-				1000: {
-					items: 5,
-				}
+	};
+	fullHeight();
+
+	// loader
+	var loader = function() {
+		setTimeout(function() { 
+			if($('#ftco-loader').length > 0) {
+				$('#ftco-loader').removeClass('show');
 			}
-		});
-	}
+		}, 1);
+	};
+	loader();
 
-	// Brand logo Slider2
-	if ($('.logo-brand-list2').length > 0) {
-		$('.logo-brand-list2').owlCarousel({
-			loop: true,
-			dots: true,
-		});
-	}
-	
-	
-	// Client Say Qutue Slider
-	if ($('.client-say-qutue-list').length > 0) {
-	     $('.client-say-qutue-list').owlCarousel({
-	       items: 1,
-	       dots: false, 
-	       nav: true,
-	       loop: true,
-	       navText: ['<i class="fa fa-angle-right"></i>' , '<i class="fa fa-angle-left"></i>'],
-	       responsive: {
-				300: {
-					nav: false
-				},		
-				480: {
-					nav: true
-				},
-			}
-	     });
+	// Scrollax
+   $.Scrollax();
 
-	 }
+   var carousel = function() {
+    $('.carousel-testimony').owlCarousel({
+        center: true,
+        loop: true,
+        items: 1,
+        margin: 30,
+        stagePadding: 0,
+        nav: false,
+        navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
+        autoplay: true, // Enable autoplay
+        autoplayTimeout: 3000, // Autoplay interval in milliseconds (adjust as needed)
+        responsive:{
+            0:{
+                items: 1
+            },
+            600:{
+                items: 3
+            },
+            1000:{
+                items: 3
+            }
+        }
+    });
+};
 
+	carousel();
 
-	// Google Map
-	if ($('#google-map').length > 0) {
-		// This example adds a marker to indicate the position of Bondi Beach in Sydney,
-		var pos = {
-			lat: 40.735657,
-			lng: -74.172367
-		};
-		var map = new google.maps.Map(document.getElementById('google-map'), {
-			zoom: 12,
-			center: pos,
-			scrollwheel: false
-		});
-		var image = 'images/map-marker.png';
-		var beachMarker = new google.maps.Marker({
-			position: pos,
-			map: map,
-			icon: image
-		});
-		map.set('styles', [
-			{
-				featureType: 'Greyscale',
-				stylers: [
-					{
-						saturation: -90
-			},
-					{
-						gamma: 1.5
-			}]
-		}]);
-	}
-
-	// MagnificPopup
-	$('.related-protfolio, .work-icon, .full-view, .blog-post-single-item').magnificPopup({
-		delegate: '.full-size',
-		type: 'image',
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
-			}
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			easing: 'ease-in-out',
-			duration: 300,
-			opener: function(element) {
-				return element.closest('.related-protfolio-single-slide, .single-work-item, .hair-dryer-image, .blog-post-single-item').find('img');
-			}
-		}
+	$('nav .dropdown').hover(function(){
+		var $this = $(this);
+		// 	 timer;
+		// clearTimeout(timer);
+		$this.addClass('show');
+		$this.find('> a').attr('aria-expanded', true);
+		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
+		$this.find('.dropdown-menu').addClass('show');
+	}, function(){
+		var $this = $(this);
+			// timer;
+		// timer = setTimeout(function(){
+			$this.removeClass('show');
+			$this.find('> a').attr('aria-expanded', false);
+			// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
+			$this.find('.dropdown-menu').removeClass('show');
+		// }, 100);
 	});
+
+
+	$('#dropdown04').on('show.bs.dropdown', function () {
+	  console.log('show');
+	});
+
+	// scroll
+	var scrollWindow = function() {
+		$(window).scroll(function(){
+			var $w = $(this),
+					st = $w.scrollTop(),
+					navbar = $('.ftco_navbar'),
+					sd = $('.js-scroll-wrap');
+
+			if (st > 150) {
+				if ( !navbar.hasClass('scrolled') ) {
+					navbar.addClass('scrolled');	
+				}
+			} 
+			if (st < 150) {
+				if ( navbar.hasClass('scrolled') ) {
+					navbar.removeClass('scrolled sleep');
+				}
+			} 
+			if ( st > 350 ) {
+				if ( !navbar.hasClass('awake') ) {
+					navbar.addClass('awake');	
+				}
+				
+				if(sd.length > 0) {
+					sd.addClass('sleep');
+				}
+			}
+			if ( st < 350 ) {
+				if ( navbar.hasClass('awake') ) {
+					navbar.removeClass('awake');
+					navbar.addClass('sleep');
+				}
+				if(sd.length > 0) {
+					sd.removeClass('sleep');
+				}
+			}
+		});
+	};
+	scrollWindow();
+
+	
+	var counter = function() {
+		
+		$('#section-counter').waypoint( function( direction ) {
+
+			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+
+				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+				$('.number').each(function(){
+					var $this = $(this),
+						num = $this.data('number');
+						console.log(num);
+					$this.animateNumber(
+					  {
+					    number: num,
+					    numberStep: comma_separator_number_step
+					  }, 7000
+					);
+				});
+				
+			}
+
+		} , { offset: '95%' } );
+
+	}
+	counter();
+
+	var contentWayPoint = function() {
+		var i = 0;
+		$('.ftco-animate').waypoint( function( direction ) {
+
+			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+				
+				i++;
+
+				$(this.element).addClass('item-animate');
+				setTimeout(function(){
+
+					$('body .ftco-animate.item-animate').each(function(k){
+						var el = $(this);
+						setTimeout( function () {
+							var effect = el.data('animate-effect');
+							if ( effect === 'fadeIn') {
+								el.addClass('fadeIn ftco-animated');
+							} else if ( effect === 'fadeInLeft') {
+								el.addClass('fadeInLeft ftco-animated');
+							} else if ( effect === 'fadeInRight') {
+								el.addClass('fadeInRight ftco-animated');
+							} else {
+								el.addClass('fadeInUp ftco-animated');
+							}
+							el.removeClass('item-animate');
+						},  k * 50, 'easeInOutExpo' );
+					});
+					
+				}, 100);
+				
+			}
+
+		} , { offset: '95%' } );
+	};
+	contentWayPoint();
+
+
+	// navigation
+	var OnePageNav = function() {
+		$(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
+		 	e.preventDefault();
+
+		 	var hash = this.hash,
+		 			navToggler = $('.navbar-toggler');
+		 	$('html, body').animate({
+		    scrollTop: $(hash).offset().top
+		  }, 700, 'easeInOutExpo', function(){
+		    window.location.hash = hash;
+		  });
+
+
+		  if ( navToggler.is(':visible') ) {
+		  	navToggler.click();
+		  }
+		});
+		$('body').on('activate.bs.scrollspy', function () {
+		  console.log('nice');
+		})
+	};
+	OnePageNav();
 
 	// MagnificPopup Iframe
 	$('.full-size-film').magnificPopup({
@@ -250,133 +235,44 @@ jQuery(document).ready(function($){
 	});
 
 
-   // Related Protfolio Slides
-	if ($('.related-protfolio-slides').length > 0) {
-	     $('.related-protfolio-slides').owlCarousel({
-	       items: 4,
-	       dots: false, 
-	       nav: true,
-	       loop: true,
-	       navText: ['<i class="fa fa-angle-left"></i>' , '<i class="fa fa-angle-right"></i>'],
-		   responsive: {
-				300: {
-					items: 1,
-					nav: false
-				},
-				768: {
-					items: 3,
-					nav: false
-				},
-				1000: {
-					items: 4,
-					nav: true
-				}
-			}
-	     });
+	// magnific popup
+	$('.image-popup').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: true,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+     gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    }
+  });
 
-	 }
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
 
-	 // Sectionize-Control
-	if ($('select').length > 0) {
-		$('select').selectize({
-			create: true,
-			sortField: {
-				field: 'text',
-				direction: 'asc'
-			},
-			dropdownParent: 'body'
-		});
-	}
-
-	// Unitegallery
-	if ($('#gallery').length > 0) {
-		$('#gallery').unitegallery({
-			gallery_theme: "compact",
-			gallery_height: 620,
-			thumb_width:168,
-			thumb_height:111,
-			thumb_color_overlay_effect: false,			
-			strip_thumbs_align: "center",
-			strippanel_padding_top: 30,
-			strip_space_between_thumbs:30,
-			slider_enable_arrows: true,
-			slider_arrow_left_align_hor:"left",	
-			slider_arrow_right_align_hor:"left",	
-
-		});
-	}
+    fixedContentPos: false
+  });
 
 
-	// Protfolio-gallary
-	if ($('#protfolio-gallary').length > 0) {
-			$("#protfolio-gallary").unitegallery({				
-				gallery_theme: "tiles",		
-				tiles_col_width: 360,
-				gallery_width:"100%",
-				tiles_space_between_cols: 0,
-				tile_enable_textpanel: true,			
-		});
-
-	}
-
-	// Price Filer
-	$('#price-filer').slider({
-			range: true,
-			values: [0, 70],
-
+  $('.appointment_date').datepicker({
+	  'format': 'm/d/yyyy',
+	  'autoclose': true
 	});
 
-	// Topbar Info
-     $(".topbar-info").click(function(){
-      $(".topbar-toggle").css('margin-right' , '210px');
-      $(this).hide();
-	 });
-	 
-	 $(".topbar-close").click(function(){
-		$(".topbar-toggle").css('margin-right' , '-100px');
-		$(".topbar-info").show();
-	});
-
-	// Animation WOW JS 
-	 var e = new WOW({
-	      boxClass: "wow",
-	      animateClass: "animated",
-	      offset: 100,
-	      mobile: false,
-	      live: !0,
-	      callback: function(e) {}
-	  });
-	  e.init();
-
-    
-}); 
-// End Ready function
-
-// Scroll To Top & sticky Header
- $(window).scroll(function() {
-	$('.animate').each(function() {
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow + 400) {
-			$(this).addClass($(this).data('animation')).addClass('animated');
-		}
-	});
-
-	var shHeight = $('.topbar').height()+$('.sticky-header').height();
-	var topOfWindow = $(window).scrollTop();
-	if (shHeight < topOfWindow) {
-		$('.sticky-header').addClass('sticky-navbar fadeInDown animated');
-		$('header').css({
-			paddingTop: $('.sticky-header').height()
-		});
-	}
-	else {
-		$('.sticky-header').removeClass('sticky-navbar fadeInDown animated');
-		$('header').css({
-			paddingTop: 0
-		});
-	}
+	$('.appointment_time').timepicker();
 
 
-
-});
+})(jQuery);
