@@ -14516,8 +14516,36 @@ a {
 }
 .left-details {
   float: left;
+  font-size: 14px;
 }
 
 .right-details {
   float: right;
+  font-size: 14px;
 }
+@media (max-width: 1200px) {
+  /* Reduce font size to 10px for both left and right details */
+  .left-details, .right-details {
+    font-size: 11px;
+  }
+}
+@media (max-width: 970px) {
+  /* Reduce font size to 10px for both left and right details */
+  .left-details, .right-details {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 851px) {
+  /* Reduce font size to 10px for both left and right details */
+  .left-details, .right-details {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width: 767px) {
+  /* Reduce font size to 10px for both left and right details */
+  .left-details, .right-details {
+    font-size: 14px;
+  }
+}
+
+
