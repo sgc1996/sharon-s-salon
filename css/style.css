@@ -14328,13 +14328,13 @@ textarea.form-control {
 /* Price Table */
 
 :root {
-	--c-blue-900: #081030;
-	--c-blue-800: #111b40;
-	--c-blue-700: #152148;
-	--c-blue-500: #1d7bdb;
-	--c-blue-300: #293359;
-	--c-blue-200: #4e5985;
-	--c-blue-100: #dfe8ff;
+	--c-blue-900: #222;
+	--c-blue-800: #222;
+	--c-blue-700: #222;
+	--c-blue-500: #222;
+	--c-blue-300: #222;
+	--c-blue-200: #222;
+	--c-blue-100: #222;
 
 	--c-green-400: white;
 }
@@ -14353,9 +14353,9 @@ a {
 /* End basic CSS override */
 
 .price-table {
-	background-color: #ffb900b8;
+	background-color: #3c3c3cb8;
 	border-radius: 16px;
-	max-width: 375px;
+	min-width: 40%;
 	padding: 32px;
 	display: flex;
 	flex-direction: column;
@@ -14504,4 +14504,20 @@ a {
 		transform: translatey(-100%) translatex(-50%) scale(1);
 	}
 }
+}
+
+.table-row {
+
+}
+.table-row > div {
+  flex: 0 0 50%;
+  min-width: 50%;
+  padding: 15px;
+}
+.left-details {
+  float: left;
+}
+
+.right-details {
+  float: right;
 }
