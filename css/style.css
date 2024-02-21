@@ -14356,7 +14356,7 @@ a {
 	background-color: #3c3c3cb8;
 	border-radius: 16px;
 	min-width: 40%;
-	padding: 32px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0 15px 45px 0 rgba(#000, 0.15);
@@ -14388,9 +14388,9 @@ a {
 	}
 
 	.price {
-		font-size: 3rem;
+		font-size: 2rem;
 		line-height: 1;
-		font-weight: 700;
+		font-weight: 600;
 		display: inline-flex;
 		align-self: center;
 		align-items: center;
@@ -14398,7 +14398,7 @@ a {
 		position: relative;
 		color: #fff;
 		small {
-			font-size: 1.25rem;
+			font-size: 0.75rem;
 			font-weight: 400;
 			position: absolute;
 			left: -1.5ch;
@@ -14526,25 +14526,25 @@ a {
 @media (max-width: 1200px) {
   /* Reduce font size to 10px for both left and right details */
   .left-details, .right-details {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 @media (max-width: 970px) {
   /* Reduce font size to 10px for both left and right details */
   .left-details, .right-details {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 @media (max-width: 851px) {
   /* Reduce font size to 10px for both left and right details */
   .left-details, .right-details {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
 }
 @media (max-width: 767px) {
   /* Reduce font size to 10px for both left and right details */
   .left-details, .right-details {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
