@@ -14388,7 +14388,7 @@ a {
 	}
 
 	.price {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		line-height: 1;
 		font-weight: 600;
 		display: inline-flex;
@@ -14398,7 +14398,7 @@ a {
 		position: relative;
 		color: #fff;
 		small {
-			font-size: 0.75rem;
+			font-size: 0.55rem;
 			font-weight: 400;
 			position: absolute;
 			left: -1.5ch;
@@ -14545,6 +14545,18 @@ a {
   /* Reduce font size to 10px for both left and right details */
   .left-details, .right-details {
     font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  /* Reduce font size to 10px for both left and right details */
+  .left-details, .right-details {
+    font-size: 8px;
+  }
+}
+@media (max-width: 370px) {
+  /* Reduce font size to 10px for both left and right details */
+  .left-details, .right-details {
+    font-size: 7px;
   }
 }
 
