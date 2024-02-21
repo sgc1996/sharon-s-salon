@@ -14472,6 +14472,36 @@ a {
 			color: black;
 		}
 	}
+  @media (max-width: 1200px) {
+    .checkmark {
+      width: 20px; /* Adjust width for smaller screens */
+      height: 20px; /* Adjust height for smaller screens */
+      svg {
+          width: 14px; /* Adjust SVG width for smaller screens */
+          height: 14px; /* Adjust SVG height for smaller screens */
+      }
+  }
+}
+  @media (max-width: 768px) {
+    .checkmark {
+      width: 18px; /* Adjust width for smaller screens */
+      height: 18px; /* Adjust height for smaller screens */
+      svg {
+          width: 12px; /* Adjust SVG width for smaller screens */
+          height: 12px; /* Adjust SVG height for smaller screens */
+      }
+  }
+}
+@media (max-width: 468px) {
+  .checkmark {
+    width: 14px; /* Adjust width for smaller screens */
+    height: 14px; /* Adjust height for smaller screens */
+    svg {
+        width: 10px; /* Adjust SVG width for smaller screens */
+        height: 10px; /* Adjust SVG height for smaller screens */
+    }
+}
+}
 
 	.question-icon {
 		display: flex;
@@ -14559,5 +14589,7 @@ a {
     font-size: 7px;
   }
 }
+
+
 
 
