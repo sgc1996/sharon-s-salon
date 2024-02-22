@@ -14591,5 +14591,14 @@ a {
 }
 
 
+/* About Order*/
+@media (max-width: 767px) {
+  .order-md-1 {
+      order: 1;
+  }
+  .order-md-2 {
+      
+  }
+}
 
 
