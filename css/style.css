@@ -13008,7 +13008,7 @@ textarea.form-control {
   }
   .testimony-wrap .user-img {
     /* width: 80px; */
-    height: 100px;
+    height: 240px;
     border-radius: 50%;
     position: relative;
     width: -webkit-fill-available;
