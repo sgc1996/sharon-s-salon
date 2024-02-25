@@ -14667,8 +14667,8 @@ text-decoration: none !important;
 -o-transition: all 0.3s ease 0s;
 transition: all 0.3s ease 0s;
 cursor: pointer;
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top: 10px;
+padding-bottom: 5px;
 }
 
 .faq .card .card-header .faq-title .badge {
