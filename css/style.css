@@ -12979,6 +12979,11 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden;
 }
+@media (max-width: 991px) {
+  .ftco-animate {
+    line-height: 20px;
+  }
+}
 
 .bg-primary {
   background: #ddbb3d !important;
@@ -13229,6 +13234,11 @@ textarea.form-control {
   font-size: 60px;
   font-weight: 300;
   position: relative;
+}
+@media (max-width: 991px) {
+  .heading-section h2 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -14626,7 +14636,7 @@ margin-bottom: 10px;
 }
 
 .faq {
-background: #ba8b00;
+background: linear-gradient(116deg, #ddbb3d, #efc31d, #d9a900, #d1aa20, #d7b023, #d7bd3d, #e3c169, #edc351, #e7bf2a, #dbcc12);
 box-shadow: 0 2px 48px 0 rgb(0, 0, 0);
 border-radius: 4px;
 }
@@ -14707,7 +14717,7 @@ margin-bottom: 14px;
   margin-bottom: 30px;
 }
 .faq .card .card-header .faq-title {
-  line-height: 26px;
+  line-height: 5px;
   margin-top: 10px;
 }
 }
