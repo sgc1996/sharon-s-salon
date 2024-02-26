@@ -12989,29 +12989,42 @@ textarea.form-control {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  .ftco-section {
+    padding: 6em 0;
+  }
+
+  .testimony-wrap .user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+  }
+}
+
 @media (max-width: 767.98px) {
   .ftco-section {
     padding: 6em 0;
   }
+
   .testimony-wrap .user-img {
-    /* width: 80px; */
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     position: relative;
-    /* width: -webkit-fill-available; */
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 599px) {
   .ftco-section {
     padding: 6em 0;
   }
+
   .testimony-wrap .user-img {
-    /* width: 80px; */
-    height: 240px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     position: relative;
-    width: -webkit-fill-available;
   }
 }
 
@@ -13231,6 +13244,18 @@ textarea.form-control {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  .heading-section h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .heading-section h2 {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .heading-section h2 {
     font-size: 28px;
@@ -13339,19 +13364,19 @@ textarea.form-control {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #ddbb3d;
+  color: white;
 }
 
 .ftco-counter .text strong.number {
   font-weight: 500;
   font-size: 50px;
-  color: #ddbb3d;
+  color: white;
 }
 
 .ftco-counter .text span {
   font-weight: 600;
   font-size: 14px;
-  color: #ddbb3d;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -14328,15 +14353,15 @@ textarea.form-control {
 /* Price Table */
 
 :root {
-	--c-blue-900: #222;
-	--c-blue-800: #222;
-	--c-blue-700: #222;
-	--c-blue-500: #222;
-	--c-blue-300: #222;
-	--c-blue-200: #222;
-	--c-blue-100: #222;
+  --c-blue-900: #222;
+  --c-blue-800: #222;
+  --c-blue-700: #222;
+  --c-blue-500: #222;
+  --c-blue-300: #222;
+  --c-blue-200: #222;
+  --c-blue-100: #222;
 
-	--c-green-400: white;
+  --c-green-400: white;
 }
 
 
@@ -14344,206 +14369,226 @@ button,
 input,
 select,
 textarea {
-	font: inherit;
+  font: inherit;
 }
 
 a {
-	color: inherit;
+  color: inherit;
 }
+
 /* End basic CSS override */
 
 .price-table {
-	background-color: #3c3c3cb8;
-	border-radius: 16px;
-	min-width: 40%;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	box-shadow: 0 15px 45px 0 rgba(#000, 0.15);
-	position: relative;
-	background-image: linear-gradient(
-		135deg,
-		rgba(#4ade80, 0.15),
-		rgba(#1d7bdb, 0.1) 20%,
-		var(--c-blue-700) 40%,
-		var(--c-blue-700) 100%
-	);
-	&:after {
-		content: "";
-		display: block;
-		top: -3px;
-		left: -3px;
-		bottom: -3px;
-		right: -3px;
-		z-index: -1;
-		position: absolute;
-		border-radius: 16px;
-		background-image: linear-gradient(
-			135deg,
-			var(--c-green-400),
-			var(--c-blue-500) 40%,
-			var(--c-blue-300) 60%,
-			var(--c-blue-700) 100%
-		);
-	}
+  background-color: #3c3c3cb8;
+  border-radius: 16px;
+  min-width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 45px 0 rgba(#000, 0.15);
+  position: relative;
+  background-image: linear-gradient(135deg,
+      rgba(#4ade80, 0.15),
+      rgba(#1d7bdb, 0.1) 20%,
+      var(--c-blue-700) 40%,
+      var(--c-blue-700) 100%);
 
-	.price {
-		font-size: 1.5rem;
-		line-height: 1;
-		font-weight: 600;
-		display: inline-flex;
-		align-self: center;
-		align-items: center;
-		gap: 4px;
-		position: relative;
-		color: #fff;
-		small {
-			font-size: 0.55rem;
-			font-weight: 400;
-			position: absolute;
-			left: -1.5ch;
-		}
-	}
+  &:after {
+    content: "";
+    display: block;
+    top: -3px;
+    left: -3px;
+    bottom: -3px;
+    right: -3px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 16px;
+    background-image: linear-gradient(135deg,
+        var(--c-green-400),
+        var(--c-blue-500) 40%,
+        var(--c-blue-300) 60%,
+        var(--c-blue-700) 100%);
+  }
 
-	.title {
-		font-size: 1.25rem;
-		font-weight: 600;
-		line-height: 1.25;
-		text-align: center;
-		margin-top: 16px;
-		color: #fff;
-	}
+  .price {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    color: #fff;
 
-	.description {
-		font-size: 0.8rem;
-		text-align: center;
-		margin-top: 4px;
-	}
+    small {
+      font-size: 0.55rem;
+      font-weight: 400;
+      position: absolute;
+      left: -1.5ch;
+    }
+  }
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 16px;
+    color: #fff;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 4px;
+  }
 }
 
 .features {
-	margin-top: 32px;
+  margin-top: 32px;
 }
 
-.feature 
-{
-	position: relative;
-	& + & 
-  {
-		margin-top: 16px;
-	}
-	summary {
-		display: inline-flex;
-		align-items: center;
-		list-style: none; 
-		&::-webkit-details-marker {
-			display: none; 
-	}
+.feature {
+  position: relative;
 
-	&[open] summary:after {
-		content: "";
-		display: block;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		position: fixed;
-		z-index: 50;
-	}
-
-	&[open] {
-		div {
-			animation: scale 0.15s ease;
-		}
-	}
-
-	.checkmark {
-		width: 24px;
-		height: 24px;
-		border-radius: 50%;
-		background-color: var(--c-green-400);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-right: 12px;
-		svg {
-			width: 18px;
-			height: 18px;
-			color: black;
-		}
-	}
-  @media (max-width: 1200px) {
-    .checkmark {
-      width: 20px; /* Adjust width for smaller screens */
-      height: 20px; /* Adjust height for smaller screens */
-      svg {
-          width: 14px; /* Adjust SVG width for smaller screens */
-          height: 14px; /* Adjust SVG height for smaller screens */
-      }
+  &+& {
+    margin-top: 16px;
   }
-}
-  @media (max-width: 768px) {
-    .checkmark {
-      width: 18px; /* Adjust width for smaller screens */
-      height: 18px; /* Adjust height for smaller screens */
-      svg {
-          width: 12px; /* Adjust SVG width for smaller screens */
-          height: 12px; /* Adjust SVG height for smaller screens */
-      }
-  }
-}
-@media (max-width: 468px) {
-  .checkmark {
-    width: 14px; /* Adjust width for smaller screens */
-    height: 14px; /* Adjust height for smaller screens */
-    svg {
-        width: 10px; /* Adjust SVG width for smaller screens */
-        height: 10px; /* Adjust SVG height for smaller screens */
+
+  summary {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
     }
-}
+
+    &[open] summary:after {
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      z-index: 50;
+    }
+
+    &[open] {
+      div {
+        animation: scale 0.15s ease;
+      }
+    }
+
+    .checkmark {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--c-green-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        color: black;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .checkmark {
+        width: 20px;
+        /* Adjust width for smaller screens */
+        height: 20px;
+
+        /* Adjust height for smaller screens */
+        svg {
+          width: 14px;
+          /* Adjust SVG width for smaller screens */
+          height: 14px;
+          /* Adjust SVG height for smaller screens */
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .checkmark {
+        width: 18px;
+        /* Adjust width for smaller screens */
+        height: 18px;
+
+        /* Adjust height for smaller screens */
+        svg {
+          width: 12px;
+          /* Adjust SVG width for smaller screens */
+          height: 12px;
+          /* Adjust SVG height for smaller screens */
+        }
+      }
+    }
+
+    @media (max-width: 468px) {
+      .checkmark {
+        width: 14px;
+        /* Adjust width for smaller screens */
+        height: 14px;
+
+        /* Adjust height for smaller screens */
+        svg {
+          width: 10px;
+          /* Adjust SVG width for smaller screens */
+          height: 10px;
+          /* Adjust SVG height for smaller screens */
+        }
+      }
+    }
+
+    .question-icon {
+      display: flex;
+      align-items: center;
+      margin-left: 6px;
+      cursor: pointer;
+    }
+
+    .answer {
+      padding: 12px;
+      background-color: var(--c-blue-800);
+      border-radius: 6px;
+      position: absolute;
+      top: -12px;
+      z-index: 100;
+      transform: translatey(-100%) translatex(-50%);
+      transform-origin: bottom center;
+      width: 80%;
+      left: 50%;
+      border: 1px solid var(--c-blue-300);
+      box-shadow: 0 15px 30px 0 rgba(#000, 0.1);
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      transform: translatey(-100%) translatex(-50%) scale(0);
+    }
+
+    100% {
+      transform: translatey(-100%) translatex(-50%) scale(1);
+    }
+  }
 }
 
-	.question-icon {
-		display: flex;
-		align-items: center;
-		margin-left: 6px;
-		cursor: pointer;
-	}
+.table-row {}
 
-	.answer {
-		padding: 12px;
-		background-color: var(--c-blue-800);
-		border-radius: 6px;
-		position: absolute;
-		top: -12px;
-		z-index: 100;
-		transform: translatey(-100%) translatex(-50%);
-		transform-origin: bottom center;
-		width: 80%;
-		left: 50%;
-		border: 1px solid var(--c-blue-300);
-		box-shadow: 0 15px 30px 0 rgba(#000, 0.1);
-	}
-}
-
-@keyframes scale {
-	0% {
-		transform: translatey(-100%) translatex(-50%) scale(0);
-	}
-	100% {
-		transform: translatey(-100%) translatex(-50%) scale(1);
-	}
-}
-}
-
-.table-row {
-
-}
-.table-row > div {
+.table-row>div {
   flex: 0 0 50%;
   min-width: 50%;
   padding: 15px;
 }
+
 .left-details {
   float: left;
   font-size: 14px;
@@ -14553,39 +14598,57 @@ a {
   float: right;
   font-size: 14px;
 }
+
 @media (max-width: 1200px) {
+
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details,
+  .right-details {
     font-size: 10px;
   }
 }
+
 @media (max-width: 970px) {
+
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details,
+  .right-details {
     font-size: 0.6rem;
   }
 }
+
 @media (max-width: 851px) {
+
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details,
+  .right-details {
     font-size: 0.5rem;
   }
 }
+
 @media (max-width: 767px) {
+
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details,
+  .right-details {
     font-size: 10px;
   }
 }
+
 @media (max-width: 450px) {
+
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details,
+  .right-details {
     font-size: 8px;
   }
 }
+
 @media (max-width: 370px) {
+
   /* Reduce font size to 10px for both left and right details */
-  .left-details, .right-details {
+  .left-details,
+  .right-details {
     font-size: 7px;
   }
 }
@@ -14594,22 +14657,21 @@ a {
 /* About Order*/
 @media (max-width: 767px) {
   .order-md-1 {
-      order: 1;
-  }
-  .order-md-2 {
-      
+    order: 1;
+    margin-top: 20px;
   }
 }
 
 /*FAQ*/
 
 .faq-title h2 {
-position: relative;
-margin-bottom: 45px;
-display: inline-block;
-font-weight: 600;
-line-height: 1;
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
 }
+
 .faq-title h2::before {
   content: "";
   position: absolute;
@@ -14620,95 +14682,165 @@ line-height: 1;
   bottom: -25px;
   margin-left: -30px;
 }
+
 .faq-title p {
-padding: 0 190px;
-margin-bottom: 10px;
+  padding: 0 190px;
+  margin-bottom: 10px;
 }
 
 .faq {
-background: #ba8b00;
-box-shadow: 0 2px 48px 0 rgb(0, 0, 0);
-border-radius: 4px;
+  background: linear-gradient(116deg, #ddbb3d, #efc31d, #d9a900, #d1aa20, #d7b023, #d7bd3d, #e3c169, #edc351, #e7bf2a, #dbcc12);
+  box-shadow: 0 2px 48px 0 rgb(0, 0, 0);
+  border-radius: 4px;
 }
 
 .faq .card {
-border: none;
-background: none;
-border-bottom: 1px dashed #000;
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #000;
 }
 
 .faq .card .card-header {
-padding: 0px;
-border: none;
-background: none;
--webkit-transition: all 0.3s ease 0s;
--moz-transition: all 0.3s ease 0s;
--o-transition: all 0.3s ease 0s;
-transition: all 0.3s ease 0s;
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .faq .card .card-header:hover {
   background: rgba(233, 30, 99, 0.1);
   padding-left: 10px;
 }
+
 .faq .card .card-header .faq-title {
-width: 100%;
-text-align: left;
-padding: 0px;
-padding-left: 30px;
-padding-right: 30px;
-font-weight: 400;
-font-size: 17px;
-letter-spacing: 1px;
-color: #16181b;
-text-decoration: none !important;
--webkit-transition: all 0.3s ease 0s;
--moz-transition: all 0.3s ease 0s;
--o-transition: all 0.3s ease 0s;
-transition: all 0.3s ease 0s;
-cursor: pointer;
-padding-top: 20px;
-padding-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #16181b;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .faq .card .card-header .faq-title .badge {
-display: inline-block;
-width: 20px;
-height: 20px;
-line-height: 14px;
--webkit-border-radius: 100px;
--moz-border-radius: 100px;
-border-radius: 100px;
-text-align: center;
-background: black;
-color: #fff;
-font-size: 12px;
-margin-right: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: black;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
 }
 
 .faq .card .card-body {
-padding: 30px;
-padding-left: 35px;
-padding-bottom: 16px;
-font-weight: 400;
-font-size: 16px;
-color: #090808;
-line-height: 28px;
-letter-spacing: 1px;
-border-top: 1px solid #F3F8FF;
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #090808;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
 }
 
 .faq .card .card-body p {
-margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 @media (max-width: 991px) {
-.faq {
-  margin-bottom: 30px;
-}
-.faq .card .card-header .faq-title {
-  line-height: 26px;
-  margin-top: 10px;
-}
+  .faq .card .card-header .faq-title {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
 }
 
+/*End FAQ*/
+
+/* start */
+.home-about {
+  float: left;
+  margin-right: 10px;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .home-about {
+    float: left;
+    margin-right: 10px;
+    height: auto;
+    width: 100%;
+  }
+}
+/* end */
+
+/* resposive-flex */
+.resposive-flex {
+    display: flex !important;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+/* end resposive-flex */
+
+/* Start Whatsapp Icon
+--------------------------------*/
+.whatsapp_float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 90px;
+  right: 15px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex; /* Centering adjustments */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hidden class for hiding the icon initially */
+.whatsapp_float.hidden {
+  display: none;
+}
+
+/* Adjustments for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 90px;
+      right: 12px;
+      font-size: 22px;
+      z-index: 100;
+  }
+}
+
+.whatsapp-icon {
+  /* Remove margin-top for both desktop and mobile */
+  /* margin-top: 16px; */
+}
+/* End Whatsapp Icon
+--------------------------------*/
