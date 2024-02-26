@@ -12745,9 +12745,18 @@ h5,
   width: 100%;
 }
 
+
+
 .coach .img {
   height: 380px;
   background-position: top center !important;
+}
+
+@media (max-width: 991px) {
+  .coach .img {
+    height: 880px;
+    background-position: center
+  }
 }
 
 .coach .text .subheading {
@@ -12900,6 +12909,13 @@ h5,
   position: relative;
 }
 
+.testimony-wrap .testi-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+}
+
 .testimony-wrap .name {
   font-weight: 500;
   font-size: 18px;
@@ -12979,11 +12995,6 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden;
 }
-@media (max-width: 991px) {
-  .ftco-animate {
-    line-height: 20px;
-  }
-}
 
 .bg-primary {
   background: #ddbb3d !important;
@@ -13004,6 +13015,14 @@ textarea.form-control {
     height: 80px;
     border-radius: 50%;
     position: relative;
+  }
+
+  .testimony-wrap .testi-img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    position: relative;
+    padding-right: 150px;
   }
 }
 
@@ -13030,6 +13049,14 @@ textarea.form-control {
     height: 130px;
     border-radius: 50%;
     position: relative;
+  }
+
+  .testimony-wrap .testi-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    padding-right: 90px;
   }
 }
 
@@ -13269,7 +13296,8 @@ textarea.form-control {
 
 .img,
 .blog-img,
-.user-img {
+.user-img,
+.testi-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14812,7 +14840,7 @@ a {
   position: fixed;
   width: 50px;
   height: 50px;
-  bottom: 90px;
+  bottom: 10px;
   right: 15px;
   background-color: #25d366;
   color: #FFF;
@@ -14836,7 +14864,7 @@ a {
   .whatsapp_float {
       width: 40px;
       height: 40px;
-      bottom: 90px;
+      bottom: 10px;
       right: 12px;
       font-size: 22px;
       z-index: 100;
@@ -14849,3 +14877,36 @@ a {
 }
 /* End Whatsapp Icon
 --------------------------------*/
+
+/* Start Team */
+/* Add this CSS for responsive layout */
+@media (max-width: 992px) {
+  .team-aline {
+    flex-wrap: wrap;
+  }
+  .col-lg-3 {
+    flex: 0 0 50%; /* Two columns per row on medium screens */
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-3 {
+    flex: 0 0 100%; /* Full width on small screens */
+    max-width: 100%;
+  }
+}
+
+/* Optionally, adjust image size for responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.coach {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text horizontally */
+}
+/* End Team */
