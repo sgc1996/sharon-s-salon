@@ -12979,6 +12979,11 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden;
 }
+@media (max-width: 991px) {
+  .ftco-animate {
+    line-height: 20px;
+  }
+}
 
 .bg-primary {
   background: #ddbb3d !important;
