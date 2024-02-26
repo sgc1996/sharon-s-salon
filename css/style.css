@@ -14831,6 +14831,18 @@ a {
     display: flex !important;
     flex-direction: column;
     margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.our-work-area-style2 {
+  overflow: hidden; /* Prevent overflow */
+}
+@media (min-width: 992px) {
+  .horizontal-img:nth-child(3),
+  .horizontal-img:nth-child(4) {
+    margin-top: -40px;
+  }
 }
 /* end resposive-flex */
 
