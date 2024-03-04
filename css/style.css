@@ -14860,6 +14860,11 @@ a {
     width: 100%;
   }
 }
+
+.box-style {
+  border-radius: 20px;
+  box-shadow: 0px 1px 13px 1px;
+}
 /* end */
 
 /* resposive-flex */
