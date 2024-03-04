@@ -12106,7 +12106,7 @@ h5,
 
 .ftco-navbar-light.scrolled .navbar-toggler {
   border: none;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: white;
   border-color: rgba(0, 0, 0, 0.5) !important;
   cursor: pointer;
   padding-right: 0;
@@ -13074,6 +13074,42 @@ textarea.form-control {
   background-color: #000;
 }
 
+@media (max-width: 991px) {
+  .resposive-footer {
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 678px) {
+  .box-01 {
+  flex-grow: 1.4;
+  flex-basis: 0;
+  }
+
+  .box-02 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .box-03 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .box-03 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.footer-content {
+  color: #bfbfbf;
+  line-height: 15px;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
 .flickr-feed img {
   margin-bottom: 10px;
   margin-right: 5px;
@@ -13550,7 +13586,7 @@ textarea.form-control {
 }
 
 .block-23 ul li .icon {
-  width: 40px;
+  width: 25px;
   font-size: 16px;
   padding-top: 4px;
   color: #bfbfbf;
@@ -14823,6 +14859,11 @@ a {
     height: auto;
     width: 100%;
   }
+}
+
+.box-style {
+  border-radius: 20px;
+  box-shadow: 0px 1px 13px 1px;
 }
 /* end */
 
