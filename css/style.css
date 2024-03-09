@@ -13781,6 +13781,35 @@ textarea.form-control {
   height: inherit !important;
 }
 
+.contact-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.social-media {
+  padding: 15px;
+}
+
+.social-media img {
+  padding: 10px;
+  transition: 0.5s;
+  box-shadow: 3px 2px 20px 1px;
+  border-radius: 50%;
+}
+
+.social-media img:hover {
+  /* width: 155px; */
+  scale: 1.1;
+  /* transition: 0.5s; */
+}
+
 .block-9 .form-control {
   outline: none !important;
   -webkit-box-shadow: none !important;
